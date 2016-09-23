@@ -1,0 +1,30 @@
+<center>
+
+
+<div id="test-wrapper">
+
+  <div class="reviews-top-image">
+
+  <h1>What Our Customers Think</h1>
+
+  </div>
+
+
+  <% @reviews.each do |review| %>
+
+    <div class="review-col">
+
+     <a href="/products/<%= review.id %>/edit"> <%= review.text %> </a>
+
+      <br>
+
+      <%= review.username %>
+
+      </div>
+
+  <% end %>
+
+
+</div>
+
+</center>

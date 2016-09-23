@@ -1,0 +1,40 @@
+
+<center>
+
+<h1 id="page-title">JUST ARRIVED</h1>
+
+<div id="wrapper">
+
+  <% @products.each do |product| %>
+
+  <div class="shop-col">
+
+    <center>
+
+    <div class="shop-col-content">
+
+      <a href="/products/<%= product.id %>">
+        <img src="<%= product.picsmall %>" />
+      </a>
+
+      <br>
+
+      <h3><%= product.name %></h3>
+      <br>
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor...
+
+      </div>
+
+      </center>
+
+  </div>
+
+<% end %>
+
+
+
+</div>
+
+</center>
